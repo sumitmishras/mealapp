@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CU Meal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f6f7fb;
+      color: #333;
+    }
+
+    .header {
+      background: #3b4070;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .toggle-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      align-items: center;
+    }
+
+    .toggle {
+      display: flex;
+      align-items: center;
+    }
+
+    .toggle-switch {
+      width: 60px;
+      height: 30px;
+      background: #3b4070;
+      border-radius: 30px;
+      position: relative;
+      margin-right: 10px;
+    }
+
+    .toggle-switch::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 24px;
+      height: 24px;
+      background: white;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .dropdown {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .date-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .tab {
+      background: #e6e9f5;
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .tab.active {
+      background: #3b4070;
+      color: white;
+    }
+
+    .meal-section {
+      margin: 10px 15px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .meal-section h3 {
+      margin: 0;
+      color: #3b4070;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .meal-section p {
+      margin: 5px 0 0;
+      color: #555;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #3b4070;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      color: white;
+    }
+
+    .bottom-nav div {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .bottom-nav .active {
+      color: #ffd700;
+    }
+
+    .icon {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">CU Meal</div>
+
+  <div class="toggle-section">
+    <div class="toggle">
+      <div class="toggle-switch"></div>
+      <strong>Girls</strong>
+    </div>
+    <select class="dropdown">
+      <option>LC</option>
+    </select>
+  </div>
+
+  <div class="date-tabs">
+    <div class="tab">Wed<br>Aug 6</div>
+    <div class="tab">Thu<br>Aug 7</div>
+    <div class="tab active">Fri<br>Aug 8</div>
+    <div class="tab">Sat<br>Aug 9</div>
+  </div>
+
+  <div class="meal-section">
+    <h3>☀️ Breakfast</h3>
+    <p>Poha, Juice</p>
+  </div>
+
+  <div class="meal-section">
+    <h3>🍔 Lunch</h3>
+    <p>Rajma, Rice, Pickle</p>
+  </div>
+
+  <div class="meal-section">
+    <h3>☕ Snacks</h3>
+    <p>Biscuits, Coffee</p>
+  </div>
+
+  <div class="meal-section">
+    <h3>🌙 Dinner</h3>
+    <p>--</p>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="active">
+      <span class="icon">🏠</span>
+      Home
+    </div>
+    <div>
+      <span class="icon">🍴</span>
+      Menu
+    </div>
+    <div>
+      <span class="icon">⚙️</span>
+      Settings
+    </div>
+    <div>
+      <span class="icon">📞</span>
+      Contact
+    </div>
+  </div>
+
+</body>
+</html>
